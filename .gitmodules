@@ -1,0 +1,9 @@
+[submodule "sdm"]
+	path = sdm
+	url = https://github.com/hildebra/sdm.git
+[submodule "LCA"]
+	path = LCA
+	url = https://github.com/hildebra/LCA.git
+[submodule "rtk"]
+	path = rtk
+	url = https://github.com/hildebra/RTK2
