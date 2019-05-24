@@ -7,8 +7,8 @@ FOSS utilities used by Lotus 16S Suite
 
 Utilities developed by Falk Hildebrand and written in C++:
 
-* sdm (Simple Demultiplexer, a fast tool for reads manupulation, [link](https://github.com/hildebra/sdm))
-* LCA (least common ancestor evaluation given tax database, [link](https://github.com/hildebra/LCA))
-* rtk (rarefaction toolkit v. 2.0, [link](https://github.com/hildebra/Rtk2))
+* **sdm** (Simple Demultiplexer, a fast tool for reads manupulation, [link](https://github.com/hildebra/sdm))
+* **LCA** (least common ancestor evaluation given tax database, [link](https://github.com/hildebra/LCA))
+* **rtk** (rarefaction toolkit v. 2.0, [link](https://github.com/hildebra/Rtk2))
 
 
