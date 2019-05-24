@@ -15,3 +15,4 @@ Utilities developed by Falk Hildebrand and written in C++:
 
 The **scripts** directory contains the build script used to test the compilation of the utilities, and it's runned by *Travis-CI* inside a Ubuntu 18.04 Docker container.
 
+Testing is performed using _.travis.yml_ configuration file (see [build history](https://travis-ci.org/quadram-institute-bioscience/lotus-tools/builds)).
