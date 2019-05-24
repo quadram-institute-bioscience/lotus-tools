@@ -4,5 +4,5 @@ services:
 install:
   - docker pull ubuntu:16.04
 script:
-  - docker run --rm -it ubuntu:16.04 /bin/bash -c "apt update && apt install -y git build-essential  zlib1g zlib1g-dev && git clone https://github.com/quadram-institute-bioscience/lotus-tools.git && bash ./lotus-tools/scripts/make_all.sh"
+  - docker run --rm -it ubuntu:16.04 /bin/bash -c "apt update && apt install -y git build-essential  zlib1g zlib1g-dev && git clone --recurse-submodules  https://github.com/quadram-institute-bioscience/lotus-tools.git && bash ./lotus-tools/scripts/make_all.sh"
 
