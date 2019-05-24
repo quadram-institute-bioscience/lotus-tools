@@ -5,7 +5,7 @@ FOSS utilities used by Lotus 16S Suite
 
 ## Programs
 
-These programs, developed by Falk Hildebrand, are written in C++:
+Utilities developed by Falk Hildebrand and written in C++:
 
 * sdm (Simple Demultiplexer, a fast tool for reads manupulation, [link](https://github.com/hildebra/sdm))
 * LCA (least common ancestor evaluation given tax database, [link](https://github.com/hildebra/LCA))
