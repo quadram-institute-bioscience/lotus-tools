@@ -11,4 +11,7 @@ Utilities developed by Falk Hildebrand and written in C++:
 * **LCA** (least common ancestor evaluation given tax database, [link](https://github.com/hildebra/LCA))
 * **rtk** (rarefaction toolkit v. 2.0, [link](https://github.com/hildebra/Rtk2))
 
+## About this repository
+
+The **scripts** directory contains the build script used to test the compilation of the utilities, and it's runned by *Travis-CI* inside a Ubuntu 18.04 Docker container.
 
