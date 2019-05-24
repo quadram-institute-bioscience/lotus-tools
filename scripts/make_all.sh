@@ -10,6 +10,8 @@ do
 	cd "$script_dir/../$TOOL"
 	make
 	mv "$TOOL" "$bin_dir"
+	rm *.o
+
 done
 
 
