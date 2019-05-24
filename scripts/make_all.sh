@@ -8,7 +8,8 @@ mkdir -p "$bin_dir"
 for TOOL in rtk sdm LCA;
 do
 	cd "$script_dir/../$TOOL"
-	cp "$script_dir/$TOOL.makefile" "Makefile"
+	cp -v "$script_dir/$TOOL.makefile" "Makefile"
+	make clean
 	make
 	mv "$TOOL" "$bin_dir"
 	rm *.o
