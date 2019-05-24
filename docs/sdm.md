@@ -22,19 +22,19 @@ Usage:
 
 Parameters:
 
-* **-i_qual** - <corresponding quality file> (required, unless quality file is "xx1.qual" and fasta is "xx1.yy")
+* **-i_qual** - *<corresponding quality file>* (required, unless quality file is "xx1.qual" and fasta is "xx1.yy")
 
-* **-map** <mapping file in Qiime format> (optional)
+* **-map** *<mapping file in Qiime format>* (optional)
 
-* **-o_fna** <file to write output fasta> (optional)
+* **-o_fna** *<file to write output fasta>* (optional)
 
-* **-o_qual** <file to write corresponding quality values> (optional)
+* **-o_qual** *<file to write corresponding quality values>* (optional)
 
-* **-o_fastq** <fastQ output file (overrides -o_qual & -o_fna)
+* **-o_fastq** *<fastQ output file>* (overrides -o_qual & -o_fna)
 
-* **-options** <sdm option file>(optional)
+* **-options** *<sdm option file>* (optional)
 
-* **-log** <file to save demultiplex log in>(optional). Set to "nolog" to deactivate alltogether.
+* **-log** *<file to save demultiplex log in>* (optional). Set to "nolog" to deactivate alltogether.
  
 * **-sample_sep** "X" string X is used to delimit samples and ID (optional, default:"__")
 
@@ -44,44 +44,44 @@ Parameters:
 
 * **-onlyPair** [1/2] consider only read pair 1 or 2. Useful when streamlining inputs (LotuS) or considering double barcoding.
 
-* **-i_MID_fastq **
+* **-i_MID_fastq**
   fastq file with only MID sequences; 
   if paired reads are supplied with -i_fna/-i_fastq and the MID identifier via -i_MID_fastq, paired has to be set to 2. 
   If e.g. merged reads are supplied + mids, paired has to be set to 1.
 
-* **-oneLineFastaFormat [0/1] 
+* **-oneLineFastaFormat** *[0/1]* 
   write Fasta and Quality file sequence string in one line, opposed to default 80 characters per line.
 
-* **-o_dereplicate <output fasta file> 
+* **-o_dereplicate** *<output fasta file>* 
   of dereplicated DNA reads (with size in header)
 
-* **-dere_size_fmt [0/1] 
+* **-dere_size_fmt** *[0/1]* 
   either (0) usearch format "size=X;" or (1) "_X"
 
-* **-min_derep_copies 
+* **-min_derep_copies** 
   only print seq if at least X copies present. 
   Can be complex terms like "10:1,3:3" -> meaning at least 10x in 1 sample or 3x in 3 different samples.
 
-* **-SyncReadPairs [T/F] 
+* **-SyncReadPairs** *[T/F]* 
   sdm can check, if read pairs occur in the same (correct) order in the input files, and correct this in case not (T).
 
 * **-maxReadsPerOutput**
   number of filtered reads in output files. If more reads, a new file is created. Only works with -o_fna
 
-* **-mergedPairs <1/0> 1:** 
+* **-mergedPairs** *<1/0>* 1: 
   paired sequences were merged externally, important for assumption that read quality is detoriating.
 
-* **-OTU_fallback <file>: **
+* **-OTU_fallback** *<file>*:
   Fallback fasta sequences for OTU's, only used in SEED extension mode
 
-* **-i_qual_offset [0-64] **
+* **-i_qual_offset** *[0-64]*
   fastq offset for quality values. Set this to '0' or 'auto' if you are unsure which fastq version is being used 
   (default: read from sdm option file)
 
-* **-o_qual_offset [0-64] **
+* **-o_qual_offset** *[0-64]*
   set quality offset for fastq outfile. Default: 33
 
-* **-ignore_IO_errors [0/1]: 1**
+* **-ignore_IO_errors** *[0/1]*:
   Errors in fastq reads are ignored, with sdm trying to sync reads pairs after corrupted single reads (default: 0)
 ```
 
