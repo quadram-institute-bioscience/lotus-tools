@@ -5,6 +5,7 @@ bin_dir="$script_dir/../bin";
 
 mkdir -p "$bin_dir"
 
+# COMPILE HILDEOME
 for TOOL in rtk sdm LCA;
 do
 	cd "$script_dir/../$TOOL"
@@ -17,3 +18,32 @@ do
 done
 
 
+# GET SWARM
+cd "$script_dir/.."
+git clone https://github.com/torognes/swarm
+cd swarm
+make
+mv ./bin/swarm "$bin_dir"
+
+# FASTTREE BINARY
+wget -O "$bin_dir/fasttree" "http://www.microbesonline.org/fasttree/FastTree"
+
+# VSEARCH
+cd "$script_dir"
+wget "https://github.com/torognes/vsearch/archive/v2.13.4.tar.gz"
+tar xzf "v2.13.4.tar.gz"
+cd "vsearch-2.13.4"
+./autogen.sh
+./configure
+make
+make install
+
+# INFERNAL
+cd "$script_dir"
+wget http://eddylab.org/infernal/infernal-1.1.2-linux-intel-gcc.tar.gz
+tar xvfz infernal-1.1.2-linux-intel-gcc.tar.gz
+cd infernal-1.1.2-linux-intel-gcc
+./configure
+make
+make check
+make install
