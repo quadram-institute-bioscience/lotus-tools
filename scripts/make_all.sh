@@ -37,6 +37,9 @@ cd "vsearch-2.13.4"
 ./configure
 make
 make install
+#/lotus-tools/scripts/vsearch-2.13.4/bin/vsearch;
+mv ./bin/vsearch "$bin_dir"
+
 
 # INFERNAL
 cd "$script_dir"
@@ -47,3 +50,5 @@ cd infernal-1.1.2-linux-intel-gcc
 make
 make check
 make install
+#/lotus-tools/scripts/vsearch-2.13.4/bin/vsearch; /lotus-tools/scripts/infernal-1.1.2-linux-intel-gcc/binaries/
+mv  /lotus-tools/scripts/infernal-1.1.2-linux-intel-gcc/binaries/* "$bin_dir"
