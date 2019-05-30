@@ -1,4 +1,5 @@
 #!/bin/sh
+
 set -euxo pipefail
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 bin_dir="$script_dir/../bin";
@@ -44,7 +45,7 @@ mv ./bin/vsearch "$bin_dir"
 # INFERNAL
 cd "$script_dir"
 wget http://eddylab.org/infernal/infernal-1.1.2-linux-intel-gcc.tar.gz
-tar xvfz infernal-1.1.2-linux-intel-gcc.tar.gz
+tar xfz infernal-1.1.2-linux-intel-gcc.tar.gz
 cd infernal-1.1.2-linux-intel-gcc
 ./configure
 make
