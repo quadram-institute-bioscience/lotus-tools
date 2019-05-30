@@ -3,7 +3,7 @@ FOSS utilities used by Lotus 16S Suite
 
 [![Build Status](https://travis-ci.org/quadram-institute-bioscience/lotus-tools.svg?branch=master)](https://travis-ci.org/quadram-institute-bioscience/lotus-tools)
 
-## Programs
+## Bundled tools
 
 Utilities developed by Falk Hildebrand and written in C++:
 
@@ -20,7 +20,7 @@ Testing is performed using _.travis.yml_ configuration file (see [build history]
 
 ### Installer (scripts/make_all.sh)
 
-This scripts build the submodules (sdm, LCA, rtk) and additionally attempts the installation of:
+This scripts build the submodules (sdm, LCA, rtk) and additionally attempts the installation of these external dependencies:
 
 * [swarm](https://github.com/torognes/swarm)
 * [fasttree](https://wiki.gacrc.uga.edu/wiki/Fasttree)
