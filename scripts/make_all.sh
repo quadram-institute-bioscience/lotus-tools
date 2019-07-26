@@ -18,6 +18,14 @@ do
 
 done
 
+# If a parameter [future: --skip] is specified, avoid installing external tools
+if [ -z ${1+x} ]; 
+then 
+    echo "Downloading and installing swarm, fasttree, vsearch, infernal [--skip to avoid]"; 
+else 
+    echo "Quitting."; 
+    exit 0;
+fi
 
 # GET SWARM
 cd "$script_dir/.."
